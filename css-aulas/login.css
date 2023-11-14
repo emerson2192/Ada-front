@@ -1,0 +1,47 @@
+display: flex;
+gap: 1.4rem;
+}
+
+.page-content h1{
+    font-size: 5.6rem;
+}
+.page-content h1 p + p{
+    color: #52b69a;
+}
+.page-content{
+    height: 100vh;
+    display: grid;
+}
+main{
+    grid-area: title;
+}
+aside{
+    grid-area: login;
+}
+@media screen and (min-width: 1024px) {
+    page-content {
+    display: grid;
+    gap: 10rem 0;
+    grid-template-areas: 
+        ". . . . . "
+    ". title login login ."
+    ". title title login ."
+    ". title login login ."
+    "footer footer footer footer footer"
+    
+
+    
+    ;
+    }
+    main{
+     grid-area: title;
+    }
+    aside{
+    grid-area: login;
+
+    }
+    footer{
+        grid-area: footer;
+    }
+    
+}

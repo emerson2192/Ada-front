@@ -1,0 +1,39 @@
+:root{
+    font-size: 62,5%;
+  
+}
+
+.box{
+   /* min-height: 10rem;
+    min-width: 10rem;
+    padding: 1.5rem;*/
+    border: 10px solid red;
+    border-radius: 0.4rem;
+    background-color: blue;
+    color: #fff;
+    font-size: 4rem;
+    display: flex;
+    order: 10;
+   /* flex-basis: calc(50% -5rem);*/
+   flex: 1;
+
+   display: flex;
+   justify-content: center;
+align-items: center;
+}
+.box p,button{
+    font-size: 4rem;
+}
+.boxes{
+    height: calc(100hv);
+    position: relative;
+   display: grid;
+    justify-content: flex-start;
+    gap:2rem 5rem;
+ /*row-gap: 1rem;
+ column-gap: 5rme;*/
+   /* grid-template-columns:  3fr 1fr 1fr 1fr;*/
+    grid-template-columns: 3fr repeat(2,1fr);
+   /* grid-template-rows:  2fr;*/
+
+}
